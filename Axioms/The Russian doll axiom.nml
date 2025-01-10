@@ -1,0 +1,4 @@
+Variable C:Collection
+
+Axiom (RussionDoll)
+  ∀C ¬(C ∈⁺ C)

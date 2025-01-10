@@ -1,0 +1,10 @@
+Variable x
+
+Variable C:Collection
+
+Axiom (AnElementOf)
+  x is an element of C iff x ∈ C    
+
+Axiom (NotAnElementOf)
+  ¬(x is an element of C) iff x ∉ C
+    

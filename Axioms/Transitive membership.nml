@@ -1,0 +1,6 @@
+Variable A:Collection
+Variable B:Collection
+Variable C:Collection
+
+Axiom (TransitiveMembership)
+  (A ∈⁺ B) iff ((A ∈ B) ∨ (∃C (A ∈ C) ∧ (C ∈⁺ B)))
