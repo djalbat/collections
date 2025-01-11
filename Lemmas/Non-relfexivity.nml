@@ -6,35 +6,11 @@ Variable D:Collection
 Lemma (NegatedElementOf)
   x ∉ C iff ¬(x ∈ C)
   Proof
-    Suppose
-      ¬(x ∈ C)
-    Hence
-      x is an element of C iff x ∈ C by AnElementOf
-      x is an element of C ⇒ x ∈ C by BiconditionalLeftElimination
-      ¬(x ∈ C) ⇒ ¬(x is an element of C) by Contrapositive
-      ¬(x ∈ C)
-      ¬(x is an element of C) by ModusPonens
-      ¬(x is an element of C) iff x ∉ C by NotAnElementOf
-      ¬(x is an element of C) 
-    Then
-      x ∉ C by BiconditionalImplicationLeftElimination
-    ¬(x ∈ C) ⇒ x ∉ C by ConditionalProof
-    Suppose
-      x ∉ C
-    Hence
-      ¬(x is an element of C) iff x ∉ C by NotAnElementOf
-      x ∉ C
-      ¬(x is an element of C) by BiconditionalImplicationRightElimination
-      x is an element of C iff x ∈ C by AnElementOf
-      x ∈ C ⇒ x is an element of C by BiconditionalRightElimination
-      ¬(x is an element of C) ⇒ ¬(x ∈ C) by Contrapositive
-      ¬(x is an element of C)
-    Then
-      ¬(x ∈ C) by ModusPonens
-    x ∉ C ⇒ ¬(x ∈ C) by ConditionalProof
-    ¬(x ∈ C) ⇒ x ∉ C
+    ¬(x is an element of C) iff x ∉ C by NotAnElementOf
+    x is an element of C iff x ∈ C by AnElementOf
+    ¬(x is an element of C) iff ¬(x ∈ C) by BiconditionalContrapositive
   Therefore
-    x ∉ C iff ¬(x ∈ C) by BiconditionalIntroduction
+    x ∉ C iff ¬(x ∈ C) by TransitiveBiconditional
 
 ###
 Lemma (NonReflexitity)
