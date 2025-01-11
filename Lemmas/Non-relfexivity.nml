@@ -1,0 +1,57 @@
+Variable x
+
+Variable C:Collection
+Variable D:Collection
+
+Lemma (NegatedElementOf)
+  x ∉ C iff ¬(x ∈ C)
+  Proof
+    Suppose
+      ¬(x ∈ C)
+    Hence
+      x is an element of C iff x ∈ C by AnElementOf
+      x is an element of C ⇒ x ∈ C by BiconditionalLeftElimination
+      ¬(x ∈ C) ⇒ ¬(x is an element of C) by Contrapositive
+      ¬(x ∈ C)
+      ¬(x is an element of C) by ModusPonens
+      ¬(x is an element of C) iff x ∉ C by NotAnElementOf
+      ¬(x is an element of C) 
+    Then
+      x ∉ C by BiconditionalImplicationLeftElimination
+    ¬(x ∈ C) ⇒ x ∉ C by ConditionalProof
+    Suppose
+      x ∉ C
+    Hence
+      ¬(x is an element of C) iff x ∉ C by NotAnElementOf
+      x ∉ C
+      ¬(x is an element of C) by BiconditionalImplicationRightElimination
+      x is an element of C iff x ∈ C by AnElementOf
+      x ∈ C ⇒ x is an element of C by BiconditionalRightElimination
+      ¬(x is an element of C) ⇒ ¬(x ∈ C) by Contrapositive
+      ¬(x is an element of C)
+    Then
+      ¬(x ∈ C) by ModusPonens
+    x ∉ C ⇒ ¬(x ∈ C) by ConditionalProof
+    ¬(x ∈ C) ⇒ x ∉ C
+  Therefore
+    x ∉ C iff ¬(x ∈ C) by BiconditionalIntroduction
+
+###
+Lemma (NonReflexitity)
+  ∀C C ∉ C
+  Proof
+    ∀D D ∉⁺ D by RussionDoll
+    C is free in C ∉⁺ C by FreeVariable
+    C ∉⁺ C by UniversalElimination
+    (C ∉⁺ C) iff ¬(C ∈⁺ C) by TransitiveNonMembership
+    C ∉⁺ C
+    ¬(C ∈⁺ C) by BiconditionalImplicationLeftElimination
+    (C ∈⁺ C) iff ((C ∈ C) ∨ ∃C ((C ∈ C) ∧ (C ∈⁺ C))) by TransitiveMembership
+    ¬(C ∈⁺ C) iff ¬((C ∈ C) ∨ ∃C ((C ∈ C) ∧ (C ∈⁺ C))) by ContrapositiveEquivalence
+    ¬(C ∈⁺ C)
+    ¬((C ∈ C) ∨ ∃C ((C ∈ C) ∧ (C ∈⁺ C))) by BiconditionalImplicationLeftElimination
+    ¬(C ∈ C) ∧ ¬(∃C ((C ∈ C) ∧ (C ∈⁺ C))) by NegatedDisjunctionInfersConjuctionOfNegations
+    ¬(C ∈ C) by ConjunctionRightElimination
+      .
+  Therefore
+    ∀C C ∉ C

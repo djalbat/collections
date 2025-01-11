@@ -3,4 +3,7 @@ Variable B:Collection
 Variable C:Collection
 
 Axiom (TransitiveMembership)
-  (A ∈⁺ B) iff ((A ∈ B) ∨ (∃C (A ∈ C) ∧ (C ∈⁺ B)))
+  (A ∈⁺ B) iff ((A ∈ B) ∨ ∃C ((A ∈ C) ∧ (C ∈⁺ B)))
+
+Axiom (TransitiveNonMembership)
+  (A ∉⁺ B) iff ¬(A ∈⁺ B)

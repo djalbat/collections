@@ -12,6 +12,8 @@ This package also defines the transitive membership, which leads to the Russian 
 ∀C ¬(C ∈⁺ C)
 ```
 
+Note that a trivial corollary of this axiom is non-reflexivity, namely no collection can be an element of itself, which does not have to be stated separately.
+
 Again, having a common base type means that this can be applied more generally across combinattions of mathematical objects that require membership.
 
 ## Contact
