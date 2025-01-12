@@ -1,4 +1,4 @@
 Type 
   Collection
   Property
-    element
+    element:Object
