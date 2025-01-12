@@ -1,0 +1,42 @@
+Variable C:Collection
+Variable D:Collection
+
+Theorem (NegatedNonReflecivity)
+  Suppose
+    ¬(C ∈⁺ C)
+  Then
+    ¬(C ∈ C)
+  Proof
+    (C ∈⁺ C) iff ((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by TransitiveMembership
+    ¬(C ∈⁺ C) iff ¬((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalContrapositive
+    ¬(C ∈⁺ C)
+    ¬((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalImplicationLeftElimination
+    ¬(C ∈ C) ∧ ¬∃D ((C ∈ D) ∧ (D ∈⁺ C)) by NegatedDisjunctionInfersConjuctionOfNegations
+  Therefore
+    ¬(C ∈ C) by ConjunctionRightElimination
+
+Theorem (UnquantifiedNonReflexivity)
+  Suppose
+    C ∉⁺ C
+  Then
+    C ∉ C
+  Proof
+    (C ∉⁺ C) iff ¬(C ∈⁺ C) by TransitiveNonMembership
+    C ∉⁺ C
+    ¬(C ∈⁺ C) by BiconditionalImplicationLeftElimination
+    ¬(C ∈ C) by NegatedNonReflecivity
+    C ∉ C iff ¬(C ∈ C) by NegatedMembership
+    ¬(C ∈ C)
+  Therefore
+    C ∉ C by BiconditionalImplicationRightElimination
+
+Theorem (NonReflexitity)
+  ∀C C ∉ C
+  Proof
+    ∀C C ∉⁺ C by RussianDoll
+    D is free in D ∉⁺ D by FreeVariable
+    D ∉⁺ D by UniversalElimination
+    D ∉ D by UnquantifiedNonReflexivity
+    D is free in D ∉ D by FreeVariable
+  Therefore
+    ∀C C ∉ C by UniversalIntroduction
