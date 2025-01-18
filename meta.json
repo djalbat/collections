@@ -1,9 +1,9 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
   "repository": "https://github.com/djalbat/collections",
   "dependencies": {
     "de-morgans-laws": "0.0",
-    "first-order-logic": "0.0",
-    "minimal-propositional-logic": "2.0"
+    "first-order-logic": "1.0",
+    "minimal-propositional-logic": "3.0"
   }
 }
