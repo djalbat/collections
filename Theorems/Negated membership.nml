@@ -5,8 +5,8 @@ Variable C:Collection
 Theorem (NegatedMembership)
   x ∉ C iff ¬(x ∈ C)
   Proof
-    ¬(x is an element of C) iff x ∉ C by NotAnElementOf
-    x is an element of C iff x ∈ C by AnElementOf
+    ¬(x is an element of C) iff x ∉ C by NonMembership
+    x is an element of C iff x ∈ C by Membership
     ¬(x is an element of C) iff ¬(x ∈ C) by BiconditionalContrapositive
   Therefore
     x ∉ C iff ¬(x ∈ C) by TransitiveBiconditional

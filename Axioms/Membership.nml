@@ -2,9 +2,8 @@ Variable x
 
 Variable C:Collection
 
-Axiom (AnElementOf)
+Axiom (Membership)
   x is an element of C iff x ∈ C    
 
-Axiom (NotAnElementOf)
+Axiom (NonMembership)
   ¬(x is an element of C) iff x ∉ C
-    
