@@ -1,4 +1,6 @@
+Type Element
+
 Type 
-  Collection
+  Collection:Element
   Property
-    element:Object
+    element:Element

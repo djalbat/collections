@@ -7,11 +7,11 @@ Theorem (NegatedNonReflecivity)
   Then
     ¬(C ∈ C)
   Proof
-    (C ∈⁺ C) iff ((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by TransitiveMembership
-    ¬(C ∈⁺ C) iff ¬((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalContrapositive
+    (C ∈⁺ C) iff ((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by TransitiveMembership
+    ¬(C ∈⁺ C) iff ¬((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalContrapositive
     ¬(C ∈⁺ C)
-    ¬((C ∈ C) ∨ ∃D ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalImplicationLeftElimination
-    ¬(C ∈ C) ∧ ¬∃D ((C ∈ D) ∧ (D ∈⁺ C)) by NegatedDisjunctionInfersConjuctionOfNegations
+    ¬((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalImplicationLeftElimination
+    ¬(C ∈ C) ∧ ¬((C ∈ D) ∧ (D ∈⁺ C)) by NegatedDisjunctionInfersConjuctionOfNegations
   Therefore
     ¬(C ∈ C) by ConjunctionRightElimination
 
@@ -29,14 +29,3 @@ Theorem (UnquantifiedNonReflexivity)
     ¬(C ∈ C)
   Therefore
     C ∉ C by BiconditionalImplicationRightElimination
-
-Theorem (NonReflexitity)
-  ∀C C ∉ C
-  Proof
-    ∀C C ∉⁺ C by RussianDoll
-    D is free in D ∉⁺ D by FreeVariable
-    D ∉⁺ D by UniversalElimination
-    D ∉ D by UnquantifiedNonReflexivity
-    D is free in D ∉ D by FreeVariable
-  Therefore
-    ∀C C ∉ C by UniversalIntroduction

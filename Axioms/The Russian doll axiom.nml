@@ -1,4 +1,4 @@
 Variable C:Collection
 
 Axiom (RussianDoll,TheRussianDollAxiom)
-  ∀C C ∉⁺ C
+  C ∉⁺ C

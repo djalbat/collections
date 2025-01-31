@@ -1,5 +1,4 @@
-Variable x
-
+Variable x:Element
 Variable C:Collection
 
 Axiom (Membership)
