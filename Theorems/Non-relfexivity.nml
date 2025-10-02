@@ -1,31 +1,31 @@
-Variable C:Collection
-Variable D:Collection
+Variable c:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
+Variable d:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
 
 Theorem (NegatedNonReflecivity)
   Suppose
-    ¬(C ∈⁺ C)
+    ¬(c ∈⁺ c)
   Then
-    ¬(C ∈ C)
+    ¬(c ∈ c)
   Proof
-    (C ∈⁺ C) iff ((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by TransitiveMembership
-    ¬(C ∈⁺ C) iff ¬((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalContrapositive
-    ¬(C ∈⁺ C)
-    ¬((C ∈ C) ∨ ((C ∈ D) ∧ (D ∈⁺ C))) by BiconditionalImplicationLeftElimination
-    ¬(C ∈ C) ∧ ¬((C ∈ D) ∧ (D ∈⁺ C)) by NegatedDisjunctionInfersConjuctionOfNegations
+    (c ∈⁺ c) 𝘪𝘧𝘧 ((c ∈ c) ∨ ((c ∈ d) ∧ (d ∈⁺ c))) by TransitiveMembership
+    ¬(c ∈⁺ c) 𝘪𝘧𝘧 ¬((c ∈ c) ∨ ((c ∈ d) ∧ (d ∈⁺ c))) by BiconditionalContrapositive
+    ¬(c ∈⁺ c)
+    ¬((c ∈ c) ∨ ((c ∈ d) ∧ (d ∈⁺ c))) by BiconditionalImplicationLeftElimination
+    ¬(c ∈ c) ∧ ¬((c ∈ d) ∧ (d ∈⁺ c)) by NegatedDisjunctionInfersConjuctionOfNegations
   Therefore
-    ¬(C ∈ C) by ConjunctionRightElimination
+    ¬(c ∈ c) by ConjunctionRightElimination
 
 Theorem (UnquantifiedNonReflexivity)
   Suppose
-    C ∉⁺ C
+    c ∉⁺ c
   Then
-    C ∉ C
+    c ∉ c
   Proof
-    (C ∉⁺ C) iff ¬(C ∈⁺ C) by TransitiveNonMembership
-    C ∉⁺ C
-    ¬(C ∈⁺ C) by BiconditionalImplicationLeftElimination
-    ¬(C ∈ C) by NegatedNonReflecivity
-    C ∉ C iff ¬(C ∈ C) by NegatedMembership
-    ¬(C ∈ C)
+    (c ∉⁺ c) 𝘪𝘧𝘧 ¬(c ∈⁺ c) by TransitiveNonMembership
+    c ∉⁺ c
+    ¬(c ∈⁺ c) by BiconditionalImplicationLeftElimination
+    ¬(c ∈ c) by NegatedNonReflecivity
+    c ∉ c 𝘪𝘧𝘧 ¬(c ∈ c) by NegatedMembership
+    ¬(c ∈ c)
   Therefore
-    C ∉ C by BiconditionalImplicationRightElimination
+    c ∉ c by BiconditionalImplicationRightElimination

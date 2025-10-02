@@ -1,9 +1,9 @@
-Variable A:Element
-Variable B:Collection
-Variable C:Collection
+Variable x:𝗘𝗹𝗲𝗺𝗲𝗻𝘁
+Variable b:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
+Variable c:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
 
 Axiom (TransitiveMembership)
-  (A ∈⁺ B) iff ((A ∈ B) ∨ ((A ∈ C) ∧ (C ∈⁺ B)))
+  (x ∈⁺ b) 𝘪𝘧𝘧 ((x ∈ b) ∨ ((x ∈ c) ∧ (c ∈⁺ b)))
 
 Axiom (TransitiveNonMembership)
-  (A ∉⁺ B) iff ¬(A ∈⁺ B)
+  (x ∉⁺ b) 𝘪𝘧𝘧 ¬(x ∈⁺ b)

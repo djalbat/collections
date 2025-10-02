@@ -1,8 +1,8 @@
-Variable x:Element
-Variable C:Collection
+Variable x:𝗘𝗹𝗲𝗺𝗲𝗻𝘁
+Variable c:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
 
 Axiom (Membership)
-  x is an element of C iff x ∈ C    
+  x is an element of c 𝘪𝘧𝘧 x ∈ c
 
 Axiom (NonMembership)
-  ¬(x is an element of C) iff x ∉ C
+  ¬(x is an element of c) 𝘪𝘧𝘧 x ∉ c
