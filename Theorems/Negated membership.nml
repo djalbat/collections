@@ -1,11 +1,12 @@
-Variable x:𝗘𝗹𝗲𝗺𝗲𝗻𝘁
-Variable c:𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻
+Variable x:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
+
+Variable 𝒞:𝖢𝗈𝗅𝗅𝖾𝖼𝗍𝗂𝗈𝗇
 
 Theorem (NegatedMembership)
-  x ∉ c 𝘪𝘧𝘧 ¬(x ∈ c)
+  x ∉ 𝒞 𝘪𝘧𝘧 ¬(x ∈ 𝒞)
   Proof
-    ¬(x is an element of c) 𝘪𝘧𝘧 x ∉ c by NonMembership
-    x is an element of c 𝘪𝘧𝘧 x ∈ c by Membership
-    ¬(x is an element of c) 𝘪𝘧𝘧 ¬(x ∈ c) by BiconditionalContrapositive
+    ¬(x is an element of 𝒞) 𝘪𝘧𝘧 x ∉ 𝒞 by NonMembership
+    x is an element of 𝒞 𝘪𝘧𝘧 x ∈ 𝒞 by Membership
+    ¬(x is an element of 𝒞) 𝘪𝘧𝘧 ¬(x ∈ 𝒞) by BiconditionalContrapositive
   Therefore
-    x ∉ c 𝘪𝘧𝘧 ¬(x ∈ c) by TransitiveBiconditional
+    x ∉ 𝒞 𝘪𝘧𝘧 ¬(x ∈ 𝒞) by TransitiveBiconditional
