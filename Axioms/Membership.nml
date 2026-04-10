@@ -2,7 +2,7 @@ Variable x:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
 Variable 𝒞:𝖢𝗈𝗅𝗅𝖾𝖼𝗍𝗂𝗈𝗇
 
 Axiom (Membership)
-  x is an element of 𝒞 𝘪𝘧𝘧 x ∈ 𝒞
+  x is an element of 𝒞 𝗂𝖿𝖿 x ∈ 𝒞
 
 Axiom (NonMembership)
-  ¬(x is an element of 𝒞) 𝘪𝘧𝘧 x ∉ 𝒞
+  ¬(x is an element of 𝒞) 𝗂𝖿𝖿 x ∉ 𝒞
