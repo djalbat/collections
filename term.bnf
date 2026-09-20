@@ -1,4 +1,10 @@
 
 
-                               term  ::=  "𝘦𝘭𝘦𝘮𝘦𝘯𝘵" "𝘰𝘧" argument ;
+                        term  ::=  "𝘦𝘭𝘦𝘮𝘦𝘯𝘵" "𝘰𝘧" argument
+
+                                |  argument ( "∩" | "∪" ) argument (2)
+
+                                |  "∅" 
+
+                                ;
 

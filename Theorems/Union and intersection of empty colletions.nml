@@ -1,0 +1,27 @@
+Variable x:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
+
+Theorem (UnionOfEmptyCollectionsIsEmpty)
+  ∅ ∪ ∅ = ∅
+  Proof
+    (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∪ ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∨ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by UnionOfCollections
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by EmptyCollections
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∨ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by NegatedDikjunctionIdempotence
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∪ ∅) 𝗂𝖿𝖿 ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∨ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by BiconditionalContraposition
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∪ ∅) by BiconditionalImplicationRightElimination
+    (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∪ ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by EquivalenceOfFalsities
+    (∅ ∪ ∅ = ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∪ ∅ 𝗂𝖿𝖿 x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by Extensionality
+  Therefore
+    ∅ ∪ ∅ = ∅ by BiconditionalImplicationRightElimination
+
+Theorem (IntersectionOfEmptyCollectionsIsEmpty)
+  ∅ ∩ ∅ = ∅
+  Proof
+    (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∩ ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∧ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by IntersectionOfCollections
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by EmptyCollections
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∧ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by NegatedConjunctionIdempotence
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∩ ∅) 𝗂𝖿𝖿 ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∧ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by BiconditionalContraposition
+    ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∩ ∅) by BiconditionalImplicationRightElimination
+    (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∩ ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by EquivalenceOfFalsities
+    (∅ ∩ ∅ = ∅) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅ ∩ ∅ 𝗂𝖿𝖿 x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅) by Extensionality
+  Therefore
+    ∅ ∩ ∅ = ∅ by BiconditionalImplicationRightElimination

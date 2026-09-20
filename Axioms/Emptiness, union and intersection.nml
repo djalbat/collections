@@ -1,0 +1,13 @@
+Variable x:𝖤𝗅𝖾𝗆𝖾𝗇𝗍
+
+Variable 𝒜:𝖢𝗈𝗅𝗅𝖾𝖼𝗍𝗂𝗈𝗇
+Variable ℬ:𝖢𝗈𝗅𝗅𝖾𝖼𝗍𝗂𝗈𝗇
+
+Axiom (EmptyCollections)
+  ¬(x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ∅)
+
+Axiom (UnionOfCollections)
+  (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 𝒜 ∪ ℬ) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 𝒜 ∨ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ℬ)
+
+Axiom (IntersectionOfCollections)
+  (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 𝒜 ∩ ℬ) 𝗂𝖿𝖿 (x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 𝒜 ∧ x is an 𝘦𝘭𝘦𝘮𝘦𝘯𝘵 𝘰𝘧 ℬ)
